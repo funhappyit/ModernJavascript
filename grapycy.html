@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그래픽스 속성 설정하기</title>
+</head>
+<script>
+    window.onload = function(){
+        //canvas 요소 가져오기
+        var canvas = document.getElementById("mycanvas");
+        //canvas 렌더링 컨텍스트 가져오기
+        var ctx = canvas.getContext('2d');
+        ctx.lineWidth = 10;
+        ctx.strokeStyle="red";
+        ctx.fillStyle = "blue";
+        ctx.globalAlpha="0.6";
+        ctx.strokeRect(10,10,100,80);
+        ctx.fillRect(150,10,100,80);
+       
+    }
+</script>
+<body>
+  <canvas id="mycanvas" width="640" height="400"></canvas>
+</body>
+</html>
